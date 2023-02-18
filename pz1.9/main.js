@@ -1,9 +1,9 @@
 console.log("Task 1");
 let i = 0;
 
-while (i <= 100){
-    console.log(`${i}`);
-    i++
+while (i <= 100) {
+  console.log(`${i}`);
+  i++;
 }
 
 console.log("Task 2");
