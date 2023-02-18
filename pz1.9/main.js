@@ -1,10 +1,10 @@
 console.log("Task 1");
-// let i = 0;
+let i = 0;
 
-// while (i <= 100){
-//     console.log(`${i}\r`);
-//     i++
-// }
+while (i <= 100){
+    console.log(`${i}`);
+    i++
+}
 
 console.log("Task 2");
 
@@ -30,50 +30,50 @@ console.log("Task 4");
 
 //Triange /
 // let lines = prompt("Enter size: ");
-let lines = 7;
-let str = " ";
-let star = "*";
-for (let i = 0; i < lines; i++) {
-  str += star;
-  console.log(str);
-}
+// let lines = 7;
+// let str = " ";
+// let star = "*";
+// for (let i = 0; i < lines; i++) {
+//   str += star;
+//   console.log(str);
+// }
 
-//Triangle
-var i = 0;
+// //Triangle
+// var i = 0;
 
-var max = 7;
-var space = "",
-  starr = "";
+// var max = 7;
+// var space = "",
+//   starr = "";
 
-while (i < max) {
-  space = "";
-  starr = "";
-  for (let j = 0; j < max - i; j++) space += " ";
-  for (j = 0; j < 2 * i + 1; j++) starr += "*";
-  console.log(space + starr);
-  i++;
-}
+// while (i < max) {
+//   space = "";
+//   starr = "";
+//   for (let j = 0; j < max - i; j++) space += " ";
+//   for (j = 0; j < 2 * i + 1; j++) starr += "*";
+//   console.log(space + starr);
+//   i++;
+// }
 
-//Romb∆
-let size = 7,
-  board = "",
-  out = "";
+// //Romb∆
+// let size = 7,
+//   board = "",
+//   out = "";
 
-for (let s = 0; s < size / 2 - 1; s++) {
-  out += " ";
-}
+// for (let s = 0; s < size / 2 - 1; s++) {
+//   out += " ";
+// }
 
-for (let i = 0; i < size / 2; i++) {
-  board += "* ";
-  console.log(out, board);
-  out = out.substring(0, out.length - 1);
-}
+// for (let i = 0; i < size / 2; i++) {
+//   board += "* ";
+//   console.log(out, board);
+//   out = out.substring(0, out.length - 1);
+// }
 
-for (let j = size / 2; j > 0; j--) {
-  out += " ";
-  board = board.substring(0, board.length - 2);
-  console.log(out, board);
-}
+// for (let j = size / 2; j > 0; j--) {
+//   out += " ";
+//   board = board.substring(0, board.length - 2);
+//   console.log(out, board);
+// }
 
 console.log("Task 5");
 
@@ -128,30 +128,30 @@ console.log("Task 7");
 
 console.log("Task 8");
 
-let day = parseInt(prompt("Please enter a day"));
+// let day = parseInt(prompt("Please enter a day"));
 
-switch (day) {
-  case 1:
-    alert("Monday");
-    break;
-  case 2:
-    alert("Tuesday");
-    break;
-  case 3:
-    alert("Wednesday");
-    break;
-  case 4:
-    alert("Thursday");
-    break;
-  case 5:
-    alert("Friday");
-    break;
-  case 6:
-    alert("Saturday");
-    break;
-  case 7:
-    alert("Sunday");
-    break;
-  default:
-    alert("Invalid enter");
-}
+// switch (day) {
+//   case 1:
+//     alert("Monday");
+//     break;
+//   case 2:
+//     alert("Tuesday");
+//     break;
+//   case 3:
+//     alert("Wednesday");
+//     break;
+//   case 4:
+//     alert("Thursday");
+//     break;
+//   case 5:
+//     alert("Friday");
+//     break;
+//   case 6:
+//     alert("Saturday");
+//     break;
+//   case 7:
+//     alert("Sunday");
+//     break;
+//   default:
+//     alert("Invalid enter");
+// }
