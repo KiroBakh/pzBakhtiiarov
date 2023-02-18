@@ -84,21 +84,31 @@ function ChessBoard(length, width) {
   this.length = length;
   this.width = width;
 
-  this.drawBoard = ()=> {
+  this.drawBoard = function () {
     let board = "";
-    for (let i = 0; i < this.length; i++) {
+
+    for (let i = this.length - 1; i >= 0; i--) {
+      board += i + 1 + " ";
       for (let j = 0; j < this.width; j++) {
         if ((i + j) % 2 === 0) {
           board += "#";
         } else {
           board += "@";
         }
+        board += " ";
       }
       board += "\n";
     }
+
+    board += "  ";
+    for (let i = 0; i < this.width; i++) {
+      board += String.fromCharCode(65 + i) + " ";
+    }
+    board += "\n";
+
     console.log(board);
   };
 }
 
-const board3 = new ChessBoard(8, 8);
-board3.drawBoard();
+const board1 = new ChessBoard(8, 8);
+board1.drawBoard();
