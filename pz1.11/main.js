@@ -58,23 +58,23 @@ console.log("Task 5");
 
 console.log("Task 6");
 
-// const N = 10;
-// const arr = Array.from({ length: N }, () => Math.floor(Math.random() * 10));
+const N = 10;
+const arr = Array.from({ length: N }, () => Math.floor(Math.random() * 10));
 
-// const largest = Math.max(...arr);
-// console.log("Largest value:", largest);
+const largest = Math.max(...arr);
+console.log("Largest value:", largest);
 
-// const smallest = Math.min(...arr);
-// console.log("Smallest value:", smallest);
+const smallest = Math.min(...arr);
+console.log("Smallest value:", smallest);
 
-// const totalSum = arr.reduce((a, b) => a + b, 0);
-// console.log("Total sum of elements:", totalSum);
+const totalSum = arr.reduce((a, b) => a + b, 0);
+console.log("Total sum of elements:", totalSum);
 
-// const mean = totalSum / arr.length;
-// console.log("Arithmetic mean of all elements:", mean);
+const mean = totalSum / arr.length;
+console.log("Arithmetic mean of all elements:", mean);
 
-// const oddValues = arr.filter((x) => x % 2 !== 0);
-// console.log("Odd values:", oddValues);
+const oddValues = arr.filter((x) => x % 2 !== 0);
+console.log("Odd values:", oddValues);
 
 console.log("Task 7");
 
@@ -210,14 +210,14 @@ console.log("Task 10");
 
 console.log("Task 11");
 
-function removeDuplicates(arr) {
-  let uniqueArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (!uniqueArr.includes(arr[i])) {
-      uniqueArr.push(arr[i]);
-    }
-  }
-  console.log(uniqueArr);
-}
-let arr = [1,342,1,24,1,42,25,34,2,2,525]
-removeDuplicates(arr)
+// function removeDuplicates(arr) {
+//   let uniqueArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (!uniqueArr.includes(arr[i])) {
+//       uniqueArr.push(arr[i]);
+//     }
+//   }
+//   console.log(uniqueArr);
+// }
+// let arr = [1,342,1,24,1,42,25,34,2,2,525]
+// removeDuplicates(arr)

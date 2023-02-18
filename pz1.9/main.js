@@ -1,35 +1,47 @@
-console.log("Task 1");
-let i = 0;
+// console.log("Task 1");
 
-while (i <= 100) {
-  console.log(`${i}`);
-  i++;
-}
+// let n = 100;
+// let primeNumbers = [];
+// let i = 2;
+
+// while (i <= n) {
+//   let isPrime = true;
+//   for (let j = 2; j < i; j++) {
+//     if (i % j === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+//   if (isPrime) {
+//     primeNumbers.push(i);
+//   }
+//   i++;
+// }
+// console.log(primeNumbers);
 
 console.log("Task 2");
 
-// let i = 0;
-// do {
-//   if (i == 0) {
-//     console.log("0 - це нуль");
-//     i++
-//   }
-//   if (i % 2 == 0) {
-//     console.log(`${i} - парне число`);
-//   } else {
-//     console.log(`${i} - непарне число`);
-//   }
+let i = 0;
+do {
+  if (i == 0) {
+    console.log("0 - це нуль");
+    i++;
+  }
+  if (i % 2 == 0) {
+    console.log(`${i} - парне число`);
+  } else {
+    console.log(`${i} - непарне число`);
+  }
 
-//   i++;
-// } while (i <= 10);
+  i++;
+} while (i <= 10);
 
 console.log("Task 3");
-// for(let i = 0; i<9; i++, console.log(i)){}
+// for (let i = -1; i < 9; i++, console.log(i)) {}
 
 console.log("Task 4");
 
-//Triange /
-// let lines = prompt("Enter size: ");
+//Triange 
 // let lines = 7;
 // let str = " ";
 // let star = "*";
@@ -120,7 +132,7 @@ console.log("Task 6");
 //   alert('Not correct enter');
 // }
 
-console.log("Task 7");
+// console.log("Task 7");
 
 // let celsi = prompt("Enter celsi: ");
 // let far = (9/5) * celsi + 32;
