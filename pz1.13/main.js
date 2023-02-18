@@ -97,16 +97,16 @@ function ChessBoard(length, width) {
         }
         board += " ";
       }
-      board += "\n";
+      board += "<br>";
     }
 
-    board += "  ";
+    board += "&nbsp&nbsp";
     for (let i = 0; i < this.width; i++) {
-      board += String.fromCharCode(65 + i) + " ";
+      board += String.fromCharCode(65 + i) + "&nbsp";
     }
-    board += "\n";
+    board += "";
 
-    console.log(board);
+    document.write(board);
   };
 }
 
