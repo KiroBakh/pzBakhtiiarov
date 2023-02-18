@@ -78,37 +78,55 @@
 //   }
 // }
 
-console.log("Task 2");
+// console.log("Task 2");
 
-function ChessBoard(length, width) {
-  this.length = length;
-  this.width = width;
+// function ChessBoard(length, width) {
+//   this.length = length;
+//   this.width = width;
 
-  this.drawBoard = function () {
-    let board = "";
+//   this.drawBoard = function () {
+//     let board = "";
 
-    for (let i = this.length - 1; i >= 0; i--) {
-      board += i + 1 + " ";
-      for (let j = 0; j < this.width; j++) {
-        if ((i + j) % 2 === 0) {
-          board += "#";
-        } else {
-          board += "@";
-        }
-        board += " ";
-      }
-      board += "<br>";
-    }
+//     for (let i = this.length - 1; i >= 0; i--) {
+//       board += i + 1 + " ";
+//       for (let j = 0; j < this.width; j++) {
+//         if ((i + j) % 2 === 0) {
+//           board += "#";
+//         } else {
+//           board += "@";
+//         }
+//         board += " ";
+//       }
+//       board += "<br>";
+//     }
 
-    board += "&nbsp&nbsp";
-    for (let i = 0; i < this.width; i++) {
-      board += String.fromCharCode(65 + i) + "&nbsp";
-    }
-    board += "";
+//     board += "&nbsp&nbsp";
+//     for (let i = 0; i < this.width; i++) {
+//       board += String.fromCharCode(65 + i) + "&nbsp";
+//     }
+//     board += "";
 
-    document.write(board);
-  };
+//     document.write(board);
+//   };
+// }
+
+// const board1 = new ChessBoard(8, 8);
+// board1.drawBoard();
+
+console.log("Task 3");
+class Random {
+  static nextDouble(low, high) {
+    return Math.random() * (high - low) + low;
+  }
+  static nextInt(low, high) {
+    return Math.floor(Math.random() * (high - low) + low);
+  }
+  static nextElement(array) {
+    return array[Random.nextInt(0, array.length)];
+  }
 }
 
-const board1 = new ChessBoard(8, 8);
-board1.drawBoard();
+const arr = ['apple', 'banana', 'orange']
+console.log(Random.nextDouble(53, 234));
+console.log(Random.nextInt(53, 234));
+console.log(Random.nextElement(arr));
