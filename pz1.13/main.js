@@ -1,12 +1,12 @@
-console.log('Task 1');
+console.log("Task 1");
 
 let language = "";
 
 while (language !== "ua" && language !== "en") {
-  language = window.prompt("Choose the language 'ua' or 'en'?", "").toLowerCase();
+  language = prompt("Choose the language 'ua' or 'en'?", "").toLowerCase();
 
   if (language !== "ua" && language !== "en") {
-    window.alert("Incorrect data entry. Please try again.");
+    alert("Incorrect data entry. Please try again.");
   }
 }
 
@@ -14,66 +14,66 @@ let dayNumber = "";
 
 if (language === "ua") {
   while (dayNumber < 1 || dayNumber > 7) {
-    dayNumber = window.prompt("Введіть номер недільного дня від 1 до 7?", "");
+    dayNumber = prompt("Введіть номер недільного дня від 1 до 7?", "");
 
     if (dayNumber < 1 || dayNumber > 7) {
-      window.alert("Невірне значення. Будь ласка, спробуйте ще раз.");
+      alert("Невірне значення. Будь ласка, спробуйте ще раз.");
     }
   }
 
   switch (dayNumber) {
     case "1":
-      window.alert("Неділя");
+      alert("Понеділок");
       break;
     case "2":
-      window.alert("Понеділок");
+      alert("Вівторок");
       break;
     case "3":
-      window.alert("Вівторок");
+      alert("Середа");
       break;
     case "4":
-      window.alert("Середа");
+      alert("Четвер");
       break;
     case "5":
-      window.alert("Четвер");
+      alert("П'ятниця");
       break;
     case "6":
-      window.alert("П'ятниця");
+      alert("Субота");
       break;
     case "7":
-      window.alert("Субота");
+      alert("Неділя");
       break;
   }
 } else {
   while (dayNumber < 1 || dayNumber > 7) {
-    dayNumber = window.prompt("Enter the day number of the week (from 1 to 7)?", "");
+    dayNumber = prompt("Enter the day number of the week (from 1 to 7)?", "");
 
     if (dayNumber < 1 || dayNumber > 7) {
-      window.alert("Incorrect data input. Please try again.");
+      alert("Incorrect data input. Please try again.");
     }
   }
 
   switch (dayNumber) {
     case "1":
-      window.alert("Sunday");
+      alert("Monday");
       break;
     case "2":
-      window.alert("Monday");
+      alert("Tuesday");
       break;
     case "3":
-      window.alert("Tuesday");
+      alert("Wednesday");
       break;
     case "4":
-      window.alert("Wednesday");
+      alert("Thursday");
       break;
     case "5":
-      window.alert("Thursday");
+      alert("Friday");
       break;
     case "6":
-      window.alert("Friday");
+      alert("Saturday");
       break;
     case "7":
-      window.alert("Saturday");
+      alert("Sunday");
       break;
   }
 }
